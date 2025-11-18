@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Laboratorio3.Models
 {
-    internal class Usuario
+    public class Usuario
     {
+        public int IdUsuario { get; set; }
+        public string UsuarioNombre { get; set; }
+        public string ContrasenaHash { get; set; }
     }
 }

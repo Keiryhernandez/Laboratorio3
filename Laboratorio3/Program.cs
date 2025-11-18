@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Laboratorio3.Forms;
 using RepoDb;
 using RepoDb.Enumerations;
+
 
 namespace Laboratorio3
 {
@@ -19,10 +21,11 @@ namespace Laboratorio3
         [STAThread]
         static void Main()
         {
-            RepoDb.SqlServerBootstrap.Initialize();
+            SqlServerBootstrap.Initialize();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new frmLogin());
         }
     }
 }
